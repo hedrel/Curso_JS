@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #333;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+        }
+
+        p{
+            font-style: italic;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            background-color: #444;
+            padding: 10px;
+        }
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 10px;
+        }
+
+        nav a:hover {
+            border-bottom: 2px solid #fff;
+        }
+        .news-container {
+            display: flex;
+            justify-content: space-between;
+            padding: 20px;
+        }
+        .news {
+            width: 46%;
+            background-color: #996969;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+            margin-bottom: 20px;
+            transition: box-shadow 0.3  ease-in-out;
+        }
+
+        .news:hover {
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        footer {
+            background-color: #333;
+            color: #fff;
+            text-align: center;
+            padding: 10px;
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Meu site</h1>
+        <p>Explorando o mundo da criacao web</p>
+
+        <nav>
+            <a href="#">Pagina Inicial</a>
+            <a href="#">Sobre Nos</a>
+            <a href="#">Servicos</a>
+            <a href="#">Contactos</a>
+        </nav>
+        <div class="news-container">
+            <div class="news">
+                <h2><a href="#sobre-nos">Noticia a esquerda</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis perspiciatis atque deserunt totam officiis! Voluptatum, eligendi, odit nemo blanditiis, dolor dolore dicta totam atque illum magni unde amet quos architecto?</p>
+            </div>
+
+            <div class="news">
+                <h2><a href="#servicos">Noticia a Direita</a></h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus veritatis sequi nemo ratione ea quae itaque deserunt labore autem ipsum.</p>
+            </div>
+        </div>
+        <footer><a href="#contactos">
+            <p>Entre em contato: contato@meusite.com</p>
+            <p>&copy; 2024 Meu Site. Todos os direitoss reservados</p>
+        </a></footer>
+
+    </header>
+</body>
+</html>

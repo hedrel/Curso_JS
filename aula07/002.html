@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cardapio de Restaurante</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 5px;
+            background-color: #f8f8f8;
+        }
+        .menu {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .category {
+            margin-bottom: 20px;
+        }
+        .item {
+            border-bottom: 1px solid #ddd;
+            padding: 10px 0;
+            display: flex;
+            flex-direction: column;
+        }
+        span {
+            color: #e44d26;
+            font-weight: bold;
+            margin-left: auto;
+        }
+        h2, h3 {
+            color: #333;
+        }
+        h3 {
+            margin-bottom: 5px;
+        }
+        h1 { 
+            color: #e44d26;
+            text-align: center;
+            margin-bottom: 20px;
+            font-family: 'Dancing script', cursive;
+            background: rgb(73, 58, 58);
+        }
+        .rodape {
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            font-size: small;
+        }
+        .rodape p {
+            text-align: center;
+        }
+
+    </style>
+</head>
+<body>
+    <h1 class="titulo">Cardapio de Restaurante</h1>
+    <div class="menu">
+        <div class="category">
+            <h2>Pratos Principais</h2>
+            <div class="item">
+                <h3>Frango Grelhado</h3>
+                <p>Peito de frango grelhado servido com legumes.</p>
+                <span>200,00 Mt</span>
+            </div>
+            <div class="item">
+                <h3>Massa Carbonara</h3>
+                <p>Massa com molho a base de ovos, queijo parmesao e becon</p>
+                <span>300,00 Mt</span>
+            </div>
+        </div>
+        <div class="category">
+            <h2>Bebidas</h2>
+            <div class="item">
+                <img src="/_imagem/Fundo_Vitrine.jpg" alt="" width="100" height="100">
+                <h3>Coquetel de Frutas</h3>
+                <p>Mistura refrescante de frutas tropicas.</p>
+                <span>50,00Mt</span>
+            </div>
+            <div class="item">
+                <h3>Cha Gelado</h3>
+                <p>Cha preto gelado com limao.</p>
+                <span>50,00Mt</span>
+            </div>
+        </div>
+    </div>
+    <footer class="rodape">
+        <p>copyrith</p>
+        <p>contato: 844889677/874889677</p>
+    </footer>
+</body>
+</html>

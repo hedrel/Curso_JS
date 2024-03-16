@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav li {
+    display: inline;
+    margin-right: 20px;
+}
+
+a {
+    color: #ddd;
+    text-decoration: none;
+    transition: 0.3s ease-in-out rgb(68, 18, 18, 0.4);
+}
+
+section {
+    padding: 10px;
+}
+
+.colecao {
+    display: flex;
+    justify-content: space-between;
+}
+
+div {
+    margin: 10px;
+    max-width: 100%;
+}
+
+.sapato {
+    text-align: center;
+}
+
+.sapato img {
+    max-width: 100%;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 200px;
+    height: 150px;
+}
+
+.sapato button {
+    background-color: #333;
+    color: white;
+    width: 80px;
+    height: 40px;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 300px;
+    margin: auto;
+    padding: 10px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1 rem;
+    position: absolute;
+    bottom: 100;
+    width: 100%;
+}

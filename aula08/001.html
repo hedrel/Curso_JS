@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de venda de sabao</title>
+    <link rel="stylesheet" href="001.css">
+   
+</head>
+<body>
+
+    <script>
+        document.getElementById("orderForm").addEventListener("submit", function (event) {event.preventDefault();
+        alert("Pedido enviado com sucesso!");
+        window.location.href = "confirmacao.html"})
+    </script>
+    <header>
+        <h1>Sabao para Bebe</h1>
+        <p>Complete o formulario abaixo para fazer o seu pedido</p>
+    </header>
+    <main>
+        <form action="orderform">
+            <label for="nome">Nome</label>
+            <input type="text" id="nome" name="nome" required>
+
+            <label for="telefone">Telefone</label>
+            <input type="text" id="telefone" name="telefone" required>
+
+            <label for="email">Email</label>
+            <input type="text" id="email" name="email" required>
+
+            <label for="endereco">Endereco</label>
+            <textarea type="text" id="endereco" name="endereco" required></textarea>
+
+            <label for="quantidade">Quantidade desejada</label>
+            <input type="text" id="quantidade" name="quantidade" min="1" required>
+
+            <button type="submit">Enviar Pedido</button>
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Sabao Corporal. Todos direitos reservados</p>
+    </footer>
+    
+</body>
+</html>

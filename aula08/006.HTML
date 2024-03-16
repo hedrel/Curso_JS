@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+      body {
+        background-color: aquamarine;
+        font-size: 1.2rem;
+        font-family: Georgia, 'Times New Roman', Times, serif;
+        margin: 0;
+        padding: 0;
+      }  
+
+      nav {
+        background-color: #333;
+        padding: 10px 0;
+      }
+
+      nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+      }
+      nav li {
+        margin-right: 20px;
+      }
+
+      nav a {
+        text-decoration: none;
+        color: #fff;
+        font-weight: bold;
+        display: flex;
+        align-items: center;
+        position: relative;
+      }
+
+      nav a.selected {
+        color: #ffcc00;
+      }
+
+      nav img {
+        margin-right: 5px;
+        opacity: 0;
+        transition: opacity 0.3s ease-in-out;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      nav a:hover img {
+        opacity: 1;
+      }
+
+      div {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin: 10px;
+        padding: 10px;
+      }
+
+      .contener {
+        display: flex;
+        justify-content: space-around;
+      }
+
+      .elemento {
+        margin: 10px;
+        padding: 10px;
+        border: #ffcc00 1px solid;
+        width: 400px;
+        height: 500px;
+        background-image: url(/_imagem/Ant-Eater-icon.png);
+      }
+      table {
+        margin: 20px;
+        text-align: center;
+        border-collapse: collapse;
+        width: 100%;
+      }
+
+      th, td {
+        padding: 8px;
+        border: 1px solid #333;
+        text-align: left;
+      }
+
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><img src="/_imagem/icon_home01.png" alt="Home"><a href="#" class="selected">Home</a></li>
+            <li><img src="/_imagem/icon_sobrenos01.png" alt="Sobre nos"><a href="#">Sobre Nos</a></li>
+            <li><img src="/_imagem/icon_contato01.png" alt="Contato"><a href="#">Contato</a></li>
+        </ul>
+    </nav>
+
+    <div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+            </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+
+            </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+            </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+            </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+            </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+            </p>
+        </div>
+        <div>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Architecto, ut enim. Fugit ab aliquid tenetur! Pariatur culpa, atque est laboriosam consectetur, error cum libero officia sit qui maxime nemo nisi.
+            </p>
+        </div>
+    </div>
+    <div class="contener">
+        <div class="elemento">Item 1</div>
+        <div class="elemento"><p style="height: auto; width: auto;">Lorem ipsum dolor sit amet consectetur adipisicing elit. Provident quas repudiandae fugit in qui, iste, enim quisquam necessitatibus exercitationem illo, nesciunt similique. Error modi repellat numquam magnam, amet incidunt temporibus. lo</p>Item 2</div>
+        <div class="elemento">Item 3</div>
+    </div>
+
+    <table>
+      <thead>
+        <tr style="background-color: #ffcc00;">
+          <th>Nome</th>
+          <th>Idade</th>
+          <th>Pais</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Mario</td>
+          <td>24</td>
+          <td>Mocambique</td>
+        </tr>
+        <tr style="background-color: #f0f0f0;">
+          <td>Lidia</td>
+          <td>38</td>
+          <td>Finladia</td>
+        </tr>
+        <tr>
+          <td>Jessica</td>
+          <td>19</td>
+          <td>Chile</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <table>
+      <thead>
+        <tr>
+          <th rowspan="2">Nome</th>
+          <th colspan="2">Informacoes</th>
+        </tr>
+        <tr>
+          <th>Idade</th>
+          <th>Pais</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Joao</td>
+          <td>25</td>
+          <td>Brasil</td>
+        </tr>
+        <tr>
+          <td>Maria</td>
+          <td>83</td>
+          <td>Mocambique</td>
+        </tr>
+      </tbody>
+      <tfoot>
+        <tr>
+          <td colspan="3">Total: 2 Pessoas</td>
+        </tr>
+      </tfoot>
+    </table>
+
+    <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px;">
+      <div style="border: 1px solid #333 ">
+        <img src="/_imagem/Ant-Eater-icon.png" alt="">
+        <p>Imagine a loucura que e ser desse jeitto</p>
+      </div>
+      <div style="border: 1px solid #333 ">
+        <img src="/_imagem/Ant-Eater-icon.png" alt="">
+        <p>Imagine a loucura que e ser desse jeitto</p>
+      </div>
+      <div style="border: 1px solid #333 ">
+        <img src="/_imagem/Ant-Eater-icon.png" alt="">
+        <p>Imagine a loucura que e ser desse jeitto</p>
+      </div>
+    </div>  
+    
+    <div style="display: flex; justify-content: space-between;">
+      <div style="order: 1;">Item 1</div>
+      <div style="order: 2;">Item 2</div>
+      <div style="order: 3;">Item 3</div>
+    </div>
+</body>
+</html>

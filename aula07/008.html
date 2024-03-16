@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Responsivo</title>
+    <style>
+        body {
+            background-color: bisque;
+            font-family: 'Arial', Verdana, Geneva, Tahoma, sans-serif;
+            padding: 0;
+            margin: 0;
+            color: #333;
+        }
+        nav {
+            text-align: right;
+            padding: 0 10px;
+        }
+        
+        header {
+            background-color: khaki;
+            color: #fff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        nav a{
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            font-weight: bolder;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+        nav a:hover {
+            color: #e74c3c;
+        }
+
+        /* Estilo para o meu respinsivo*/
+
+        .menu-icon {
+            display: none;
+            cursor: pointer;
+        }
+
+        @media only screen and (max-width: 600px) {
+            nav {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            nav a {
+                margin: 5px 0;
+            }
+
+            .menu-icon {
+                display: block;
+            }
+            .menu-links {
+                display: none;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .menu-links.show {
+                display: flex;
+            }
+        }
+
+        th, td {
+            padding: 10px;
+            border: 1px solid rgb(116, 105, 105);
+            text-align: center;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 50%;
+            margin-top: 20px;
+            margin-left: 10px;
+
+        }
+        th {
+            background-color: chocolate;
+            font-size: 1.5em;
+            font-family: 'Times New Roman', Times, serif;
+        }
+        
+        caption {
+            font-style: italic;
+            font-size: 0.9em;
+            text-align: right;
+        }
+        .titulo-02 {
+            padding-top: 15px;
+        }
+
+        .coluna-01 {
+            width: 48%;
+            padding-left: 10px;
+            margin-right: 50%;
+        }
+        .coluna-02 {
+            width: 48%;
+            position: relative;
+            margin-top: 10px;
+            
+        }
+        
+        a {
+            padding: 40px;
+        }
+        .table02 {
+            margin-bottom: 30px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Historia da Africa em Segundos</h1>
+        <p>Explorando Africa a Preto e Branco</p>
+    </header>
+    <nav>
+        <div class="menu-icon" onclick="toggleMenu">=</div>
+        <div class="menu-links">
+            <a href="#">Home</a>
+            <a href="#">Noticia</a>
+            <a href="#">Contato</a>
+        </div>
+    </nav>
+
+    <script>
+        function toggleMenu() {
+            document.querySelector('.menu-links').classList.toggle('show');
+        }
+    </script>
+
+    <table>
+        <caption>@Tabela_ anual</caption>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Morada</th>
+            <th>Profissao</th>
+        </tr>
+        <tr>
+            <td rowspan="2">Andre</td>
+            <td>36</td>
+            <td>Matola</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            
+            <td>25</td>
+            <td>Quelimane</td>
+            <td>Medica</td>
+        </tr>
+        <tr>
+            <td>Kaly</td>
+            <td>29</td>
+            <td>Xai Xai</td>
+            <td>Carpinteiro</td>
+        </tr>
+   
+        <table>
+        <tr>
+            <th>Nome</th>
+            <th>Idade</th>
+            <th>Morada</th>
+            <th>Profissao</th>
+        </tr>
+        <tr>
+            <td>Andre</td>
+            <td>36</td>
+            <td>Matola</td>
+            <td>Professor</td>
+        </tr>
+        <tr>
+            <td>Ana</td>
+            <td>25</td>
+            <td>Quelimane</td>
+            <td>Medica</td>
+        </tr>
+        <tr>
+            <td>Kaly</td>
+            <td>29</td>
+            <td>Xai Xai</td>
+            <td>Carpinteiro</td>
+        </tr>
+    </table>
+
+    <div>
+        <h1 class="titulo-02">Origem da Africa</h1>
+        <div class="coluna-01">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem perferendis, atque illo, ex, laudantium saepe fuga quis eveniet est incidunt officia facere odio excepturi. Sapiente omnis cumque laudantium nam culpa?</p>
+        </div>
+        <div class="coluna-02">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat repudiandae impedit voluptatibus doloribus deleniti corrupti soluta accusamus veniam temporibus animi cumque vero pariatur, dolorem cum consequuntur deserunt itaque laboriosam dolor.</p>
+        </div>
+    </div>
+    <hr>
+    <hr>
+    <table class="table02">
+        <tr>
+            <th>Coluna 1</th>
+            <th>Coluna 2</th>
+            <th>Coluna 3</th>
+            <th>Coluna 4</th>
+            <th>Coluna 5</th>
+        </tr>
+        <tr>
+            <td>Linha 1 Col 1</td>
+            <td>Linha 1 Col 2</td>
+            <td>Linha 1 Col 3</td>
+            <td>Linha 1 Col 4</td>
+            <td>Linha 1 Col 5</td>
+        </tr>
+        <tr>
+            <td>Linha 2 Col 1</td>
+            <td>Linha 2 Col 2</td>
+            <td>Linha 2 Col 3</td>
+            <td>Linha 2 Col 4</td>
+            <td>Linha 2 Col 5</td>
+        </tr>
+        <tr>
+            <td>Linha 3 Col 1</td>
+            <td>Linha 3 Col 2</td>
+            <td>Linha 3 Col 3</td>
+            <td>Linha 3 Col 4</td>
+            <td>Linha 3 Col 5</td>
+        </tr>
+        <tr>
+            <td>Linha 4 Col 1</td>
+            <td>Linha 4 Col 2</td>
+            <td>Linha 4 Col 3</td>
+            <td>Linha 4 Col 4</td>
+            <td>Linha 4 Col 5</td>
+        </tr>
+        <tr>
+            <td>Linha 5 Col 1</td>
+            <td colspan="2">Linha 5 Col 2</td>
+            <td>Linha 5 Col 3</td>
+            <td>Linha 5 Col 4</td>
+            
+        </tr>
+        <tr>
+            <td colspan="4">TOTAL</td>
+            <td colspan="4">5.000,00MT</td>
+        </tr>
+    </table>
+    <a class="site01" href="htts://www.example.com">
+        <img src="/_imagem/Fundo_Vitrine.jpg" alt="Vitrine">
+    </a>
+
+    
+
+</body>
+</html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex Box</title>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: nowrap;
+            align-content: center;
+            row-gap: 10px;
+            column-gap: 30px;
+
+            padding: 15px;
+            height: 500px;
+        }
+
+        .bloco1{
+            order: 0;
+            /*flex-grow: 1;
+            flex-shrink: 1;
+            flex-basis: 100px;*/
+            flex: 0 1 auto;
+            align-self: flex-start;
+
+            background-color: blueviolet;
+            height: 150px;
+            width: 150px;           
+        }
+
+        .bloco2{
+            order: 0;
+            /*flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: 100px;*/
+            flex: 0 1 auto;
+            align-self: flex-end;
+
+            background-color: red;
+            height: 150px;
+            width: 150px;
+            
+        }
+        .bloco3{
+            order: 0;
+            /*flex-grow: 2;
+            flex-shrink: 1;
+            flex-basis: auto;*/
+            flex: 0 1 auto;
+            align-self: center;
+
+            background-color: yellow;
+            height: 150px;
+            width: 150px;     
+        }
+    </style>
+</head>
+<body>
+<p>esta pagina e onde se encontra os dados da pesquisa<a href="index02.html" rel="next">contudo qualquer duvida entre em contacto</a></p>
+
+    <main class="container">
+        <dir class="bloco1">1</dir>
+        <dir class="bloco2">2</dir>
+        <dir class="bloco3">3</dir>
+        <!-- <dir class="bloco1">1</dir>
+        <dir class="bloco2">2</dir>
+        <dir class="bloco3">3</dir>
+        <dir class="bloco1">1</dir>
+        <dir class="bloco2">2</dir>
+        <dir class="bloco3">3</dir>
+        <dir class="bloco1">1</dir>
+        <dir class="bloco2">2</dir>
+        <dir class="bloco3">3</dir> -->
+    </main>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+</head>
+<body>
+    <h1>Calculadora Simples</h1>
+    <input type="text" id="numero1" placeholder="numero1">
+    <input type="text" id="numero2" placeholder="numero2">
+    <button onclick="calcular()">Calcular</button>
+    <p id="resultado">Resultado: </p>
+    <script>
+        function calcular() {
+            var numero1 = parseFloat(document.getElementById("numero1").value);
+            var numero2 = parseFloat(document.getElementById("numero2").value);
+            var resultado = numero1 + numero2;
+             document.getElementById("resultado").innerHTML = "Resultado: " + resultado;
+        }
+    </script>
+</body>
+</html>

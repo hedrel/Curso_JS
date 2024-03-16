@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabelas</title>
+    <style>
+        body {
+            background-color: rgb(175, 194, 187);
+            font-family: 'Arial';
+        }
+
+        header {
+            background-color: cadetblue;
+            font-family: 'Times New Roman', Times, serif;
+            display: flex;
+            justify-content: space-between;
+            margin: 10px;
+            padding: 10px;
+        }
+
+        nav {
+            font-size: 1.2rem;
+            text-decoration: none;
+        }
+
+        table {
+            border-collapse: collapse;
+            margin-top: 20px;
+            width: 50%;
+        }
+
+        td {
+            padding: 10px;            
+        }
+    </style>
+
+</head>
+<body>
+
+    <script>
+        document.addEventListener('input', function (e){
+            if (e.target.classList.contains('nivel')) {
+                updateTotal()
+            }
+        });
+        function updateTotal() {
+            var niveis = document.querySelectorAll('.nivel');
+            var total = 0;
+            niveis.forEach(function (nivel) {
+                total += parseInt(nivel.textContent) 0;
+            });
+
+            document.getElementById('total-nivel').textContent = total;
+        }
+
+        updateTotal(); 
+    </script>
+   
+   <header>
+        <h1>Mundo Tabelas</h1>
+        <nav>
+            <a href="#">Menu</a>
+            <a href="#">Tabelas</a>
+        </nav>
+    </header>
+
+    <table border="1">
+        <caption>Tabela 01</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Nivel</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Fireball</td>
+                <td>Ofensivo</td>
+                <td>3</td>
+            </tr>
+            <tr>
+                <td>Heal</td>
+                <td>Curativo</td>
+                <td>2</td>
+            </tr>
+            <tr>
+                <td>Invisibility</td>
+                <td>Ilusao</td>
+                <td>4</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <table border="1">
+        <caption>Registo de Dados</caption>
+        <thead>
+            <tr>
+                <th>Nome</th>
+                <th>Tipo</th>
+                <th>Nivel</th>
+            </tr>
+        </thead>
+        <tbody id="dados-tbody">
+            <tr>
+                <td contenteditable="true">Fireball</td>
+                <td contenteditable="true">Ofesivo</td>
+                <td contenteditable="true">3</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">Heal</td>
+                <td contenteditable="true">Curativo</td>
+                <td contenteditable="true">2</td>
+            </tr>
+            <tr>
+                <td contenteditable="true">Invisibility</td>
+                <td contenteditable="true">Ilusao</td>
+                <td contenteditable="true">4</td>
+            </tr>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="2">Total</td>
+                <td id="total-nivel">0</td>
+            </tr>
+        </tfoot>
+    </table>
+    
+</body>
+</html>

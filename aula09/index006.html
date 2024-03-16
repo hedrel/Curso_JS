@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tratamento de imagem</title>
+</head>
+<body>
+    <h1>Imagens Dimanicas</h1>
+    <p>Tenta abrir esse site em varios dispositivos ou simplesmente aumenta e diminua o tamanho do seu navegador.</p>
+
+    <picture>
+        <source media="(max-width: 750px)" srcset="/aula09/_imange/foto-3.png" type="image/png">
+        <source media="(max-width: 1050px)" srcset="/aula09/_imange/foto-2.png" type="image/png">
+        <img src="/aula09/_imange/foto-1.png" alt="imagem flexivel">
+    </picture>
+
+    <h1>Reproduzindo audio</h1>
+    <p>Vamos Reproduzir audio em HTML.</p>
+    <audio src="_audio/Aaron_Kenny.mp3" controls></audio>
+    <audio preload="metadata" controls>
+        <source src="_audio/Gravação_hva.mp3" type="audio/mpeg">
+        <source src="_audio/Gravação_hva.ogg" type="audio/ogg">
+        <source src="_audio/Gravação_hva.wav" type="audio/wav">
+        <p>Infeslismente seu navegador nao consegue Reproduzir audio. <a href="_audio/Gravação_hva.wav">Clique aqui para baixar o arquivo MP3</a></p>
+    </audio>
+    
+    <h1>Reproduzir videos</h1>
+    <p>Vamos reproduzir videos em HTML5</p>
+    <video width="500" controls poster="_imange/poster_limao.jpg">
+        <source src="_video/Meuvideo.mp4" type="video/mp4">
+        <source src="_video/Meuvideo.mp4" type="video/mp4">
+        <source src="_video/Meuvideo.webm" type="video/webm">
+        <source src="_video/Meuvideo.ogg" type="video/ogg">
+        <source src="_video/Meuvideo.mkv" type="video/mkv">
+        <p>Infeslismente seu navegador nao consegue Reproduzir audio. <a href="_video/Meuvideo.mp4">Clique aqui para baixar o arquivo MP3</a></p>
+    </video>
+
+    <h1>Inserir video do Youtuber</h1>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/pOqsgn96FF4?si=tpAkqwTEObI6UJdr" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+
+    <a href="_video/Meuvideo.mp4" target="_blank"><img src="_imange/foto-3.png" alt="foto-3"></a>
+    <a href="/">voltar</a>
+
+
+    <div>
+        <a href="_video/Meuvideo001.mkv" target="_blank"><video src="_video/Meuvideo001.mkv" controls width="560" height="460"></video> 
+    </a>
+    </div>
+    <a href="/aula09/">voltar</a>
+</body>
+</html>

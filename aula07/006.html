@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cabecalho com Imagem de Fundo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+
+        header {
+            background: url('/_imagem/Fundo_Vitrine.jpg') center/cover;
+            color: #fff;
+            padding: 20px;
+            text-align: left;
+            position: relative;
+        }
+
+        h1 {
+            margin: 0;
+            font-size: 2em;
+        }
+
+        p {
+            font-style: italic;
+        }
+
+        .logo {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            max-width: 100px;
+        }
+
+        nav {
+            background-color: rgba(0, 0, 0, 0.7);
+            padding: 10px 0;
+            text-align: center;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            padding: 10px;
+            margin: 0 15px;
+            font-weight: bold;
+            font-size: 1.2em;
+            transition: color 0.3s ease-in-out;
+        }
+
+        nav a:hover {
+            color: #e74c3c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <img class="logo" src="/_imagem/Logo_Vitrine.png." alt="Logo">
+        <h1>Meu Site com Imagem de Fundo</h1>
+    </header>
+    <nav>
+        <a href="#">Pagina Inicial</a>
+        <a href="#">Sobre Nos</a>
+        <a href="#">Servicos</a>
+        <a href="#">Contato</a>
+    </nav>
+</body>
+</html>
