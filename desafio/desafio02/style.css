@@ -67,6 +67,15 @@ section.imagem {
     color: white;
 }
 
+section#imagem01 {
+    background: black url(imagens/background001.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+section#imagem02 {
+    background: black url(imagens/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+
 section.imagem >p {
     display: inline-block;
     padding: 5px;
