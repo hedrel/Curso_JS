@@ -1,0 +1,167 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: #1f1517;
+    color: #ffffff;
+}
+
+html {
+    font-family: inter, sans-serif;
+    font-weight: 500px;
+}
+
+header {
+    
+
+}
+
+nav {
+    background-color: aquamarine;
+    max-width: 1200px;
+    margin: auto;
+    padding: 1.5rem 10rem;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+.logo {
+    font-family: teko;
+    font-size: 1.5rem;
+    font-weight: 600px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.menu {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+    color: #FFF2E780;
+    font-weight: 600;
+}
+
+.github {
+    color: #fff2ef;
+    font-weight: 600;
+}
+
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.destaque {
+    font-family: epilogue;
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: uppercase;
+}
+
+.marrom {
+    color: #A45A49;
+}
+
+h1 {
+    font-family: montserrat;
+    font-size: 3.5rem;
+    font-weight: 800;
+}
+hr {
+    border-color: #A45A49;
+}
+
+.hero-subtitulo {
+    font-family: inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #c7bab3;
+}
+
+.hero {
+    background-color: #181012;
+
+    max-width: 1120px;
+    height: 60vh;
+
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6rem;
+
+    padding: 0 2rem;
+    margin: auto;
+}
+
+.hero-container {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+
+    overflow: clip;
+}
+
+.hero-imagem {
+    max-width: 45%;
+    columns-count: 4;
+    column-gap: 1rem;
+    margin: -1rem;
+}
+
+.hero-imagem > figure > img {
+    width: 100%;
+    border-radius: 0.5rem;
+}
+
+.botao {
+    width: 100%;
+    max-width: 1120px;
+    padding: 1rem;
+    margin: auto;
+    transform: translate("0, -50%);
+}
+
+button {
+    border: none;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background-color: #A45A49;
+}
+
+.receita {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 1120px;
+    padding: 3rem 2rem;
+    margin: auto;
+}
+
+.receita-cabacalho {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.receita-titulo {
+    font-family: montserrat;
+    font-size: 32px;
+    font-weight: 700;
+    color: #fff2ef;
+}
+
