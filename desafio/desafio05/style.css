@@ -1,0 +1,126 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: aquamarine;
+}
+
+header {
+    background-image: linear-gradient(to top, rgba(36, 43, 51, 0.938), rgb(104, 155, 212) );
+    text-align: center;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif, Times, serif;
+    padding: 40px;
+    min-height: 100px;
+}
+
+header > h1 {
+    color: white;
+    font-size: 3em;
+    margin-bottom: 30px;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.467);
+}
+nav {
+    text-align: left;
+    font-size: 1.3em;
+    margin: 10px;
+    color: white;
+    font-weight: bolder;
+}
+
+
+li > a {
+    text-decoration: none;
+    color: black;
+}
+
+nav:hover ul {
+    display: block;
+    color: black;
+}
+
+nav > ul {
+    display: none;
+}
+
+
+main {
+    background-color: rgb(155, 187, 187);
+    margin: auto;
+    max-width: 800px;
+    min-width: 280px;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.438);
+    margin-bottom: 20px;
+    border-radius: 0 0 20px 20px;
+}
+
+main > h1 {
+    color: rgb(228, 212, 212);
+    font-weight: bold;
+    text-shadow: 2px 2px 0 rgba(0, 0, 0, 0.467);
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+section {
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 1em;
+    padding-left: 30px;
+    font-family: 'Courier New', Courier, monospace, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+
+}
+
+section.normal {
+    background-color: white;
+    color: black;
+    gap: 90px;
+}
+
+section.imagem {
+    background-color: rgb(51, 51, 51);
+    color: rgb(19, 18, 18);
+}
+
+
+section#image01 {
+    background: black url(imagem/poster_limao.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+section#image02 {
+    background: black url(imagem/background002.jpg) center center no-repeat fixed;
+    background-size: cover;
+}
+ aside > p {
+    text-align: justify;
+    font-size: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    margin: 40px;
+ }
+
+ button {
+    background-color: bisque;
+    color: black;
+    font-weight: bold;
+    height: 40px;
+    width: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.438);
+    border-radius: 10px;
+    margin: 100px 0 0 0;
+
+ }
+
+ footer {
+    background-image:linear-gradient(to bottom, rgb(101, 109, 82), rgb(129, 129, 228));
+    padding: 10px;
+    font-size: 1.2rem;
+ }
+
+ footer > p.direitos {
+    text-align: center;
+    font-size: 0.95rem
+ }

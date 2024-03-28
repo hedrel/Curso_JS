@@ -1,0 +1,27 @@
+.picture_input {
+    display: none;
+}
+
+.picture {
+    width: 400px;
+    height: 400px;
+    background-color:#ddd;
+    display: block;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #aaa;
+    border: 2px dashed #504d4d;
+    cursor: pointer;
+    font-family: sans-serif;
+    transition: color 300ms ease-in-out, background 300ms ease-in-out;
+}
+
+.picture:hover {
+    color: #637472;
+    background-color: #aaa;
+}
+.picture:active {
+    color: turquoise;
+    background-color: turquoise  ;
+}

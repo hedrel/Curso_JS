@@ -14,11 +14,6 @@ html {
     font-weight: 500px;
 }
 
-header {
-    
-
-}
-
 nav {
     background-color: aquamarine;
     max-width: 1200px;
@@ -30,6 +25,7 @@ nav {
     justify-content: space-between;
     align-items: center;
 }
+
 a {
     text-decoration: none;
 }
@@ -61,8 +57,12 @@ ul {
 
 
 main {
+    background-color: #181012;
     display: flex;
     flex-direction: column;
+    width: 1200px;
+    margin: auto;
+    border-radius: 0 0 20px 20px;
 }
 
 .destaque {
@@ -89,16 +89,7 @@ hr {
     border-color: #A45A49;
 }
 
-.hero-subtitulo {
-    font-family: inter;
-    font-size: 1.5rem;
-    font-weight: 400;
-    color: #c7bab3;
-}
-
 .hero {
-    background-color: #181012;
-
     max-width: 1120px;
     height: 60vh;
 
@@ -112,6 +103,13 @@ hr {
     margin: auto;
 }
 
+.hero-subtitulo {
+    font-family: inter;
+    font-size: 1.5rem;
+    font-weight: 400;
+    color: #c7bab3;
+}
+
 .hero-container {
     display: flex;
     flex-direction: column;
@@ -122,7 +120,7 @@ hr {
 
 .hero-imagem {
     max-width: 45%;
-    columns-count: 4;
+    column-count: 4;
     column-gap: 1rem;
     margin: -1rem;
 }
@@ -150,7 +148,7 @@ button {
 .receita {
     display: flex;
     flex-direction: column;
-
+    
     max-width: 1120px;
     padding: 3rem 2rem;
     margin: auto;
@@ -243,6 +241,8 @@ button {
 footer {
     padding: 10px;
     margin: 20px;
+    border-radius: 20px 0;
+    background-color: #c7bab3;
 
 }
 footer > p {
