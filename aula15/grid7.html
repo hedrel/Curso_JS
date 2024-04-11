@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
+        body {
+            background-color: darkgray;
+        }
+        /*
+        primeiro exemplo com 6 container, distribuidos em 2 linhas.
+        .container {
+            border: 1px solid black;
+            gap: 10px;
+            padding: 10px;
+
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr ;
+            
+        }
+        .item {
+            border: 1px solid dimgrey;
+            background: url(imagem/_ceu_lindo.png);
+            width: 100%;
+            height: 300px;
+        }
+        */
+
+        .container {
+            padding: 10px;
+            display: grid; 
+            max-width: 800px;
+            grid-template-columns: repeat(3, 1fr);
+            margin: 0 auto;
+            gap: 10px;
+
+        }
+
+        div {
+            background-color: aquamarine;
+        }
+
+        
+        
+
+        .container > div:nth-child(n + 4) {
+            display: grid;
+            grid-template-rows: 1fr 1fr;
+            background-color: rebeccapurple;
+            align-items: center;
+        }
+
+        .anucio {
+            grid-template-columns: 1;
+            grid-row: 2/5;
+            border: 1px solid skyblue;
+            display: block;
+        }
+
+        .item {
+            
+        }
+
+    </style>
+</head>
+<body>
+    <section class="container">
+            <div class="item">
+                <img src="imagem/_ceu_lindo.png" alt="">
+                <p>Lua Nova</p>
+            </div>
+            <div class="item">
+                <img src="imagem/_ceu_lindo.png" alt="">
+                <p>Lua Nova</p>
+            </div>
+            <div class="item">
+                <img src="imagem/_ceu_lindo.png" alt="">
+                <p>Lua Nova</p>
+            </div>
+            <div class="item">
+                <img src="imagem/download (6).jpeg" alt="">
+                <p>Vida</p>
+            </div>
+            <div class="item">
+                <img src="imagem/download (6).jpeg" alt="">
+                <p>Vida</p>
+            </div>
+            <div class="item">
+                <img src="imagem/download (6).jpeg" alt="">
+                <p>Vida</p>
+            </div>
+            <div class="item">
+                <img src="imagem/download (6).jpeg" alt="">
+                <p>Vida</p>
+            </div>
+            <div class="item">
+                <img src="imagem/download (6).jpeg" alt="">
+                <p>Vida</p>
+            </div>
+            <div class="item">
+                <img src="imagem/download (6).jpeg" alt="">
+                <p>Vida</p>
+            </div>
+            <div class="anucio">
+                <img src="imagem/sapato03.jpeg" alt="">
+            </div>
+    </section>
+</body>
+</html>
